@@ -1,7 +1,7 @@
-=== Unifiedpurse Easy Digital Downloads Payment Gateway ===
-Contributors: tubiz
+## Unifiedpurse Easy Digital Downloads Payment Gateway ##
+Contributors: tormuto
 Donate link: https://unifiedpurse.com/sci?receiver=unifiedpurse&currency=USD&amount=2&memo=freewill+donation
-Tags: paystack, edd, payment gateway, tubiz plugins, verve, ghana, nigeria, mastercard, visa,
+Tags: unifiedpurse, edd, payment gateway, tormuto plugins, verve, ghana, mastercard, visa, worldwide, universal, bitcoin, litecoin, ethereum, perfectmoney
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 5.0
@@ -14,11 +14,11 @@ Unifiedpurse Easy Digital Downloads payment gateway allows you to accept payment
 
 
 
-== Description ==
+## Description ##
 
 This is a UnifiedPurse payment gateway for Easy Digital Downloads.
 
- UnifiedPurse enables you to accept unified payments worldwide, from a single point. Providing over 80 popular payment alternatives (e.g PayPal, Bank deposit/transfer, Perfectmoney...) to your payers, and collects your payments into a unified purse. [Read about how it works](https://unifiedpurse.com/how_it_works)
+ UnifiedPurse enables you to accept unified payments worldwide, from a single point. Providing over 80 popular payment alternatives (e.g PayPal, Bank deposit/transfer, Perfectmoney, Western Union, ...) to your payers, and collects your payments into a unified purse. [Read about how it works](https://unifiedpurse.com/how_it_works)
 
 To signup for a Unifiedpurse Merchant account visit their website by clicking [here](https://unifiedpurse.com/signup)
 
@@ -28,33 +28,20 @@ However, you can also [import and manage all your external payment methods from 
 Hence, no need of keeping tabs on API/SCI documentation separately for each platform. Rather, control availability of all your payment methods from a single point.
 
 
-= Plugin Features =
+### Plugin Features ###
 
 *   __Accept payment__ via over-80 payment methods and gateways.
 * 	__Seamless integration__ into the Easy Digital Downloads checkout page. Accept payment directly on your site
 
 
-= Suggestions / Feature Request =
+### Suggestions / Feature Request ###
 
 If you have suggestions or a new feature request, feel free to get in touch with us [here](http://unifiedpurse/support/)
 
 
 
+## Installation ##
 
-== Installation ==
-
-= Automatic Installation =
-* 	Login to your WordPress Admin area
-* 	Go to "Plugins > Add New" from the left hand menu
-* 	In the search box type __Unifiedpurse Easy Digital Downloads payment gateway__
-*	From the search result you will see __Unifiedpurse Easy Digital Downloads payment gateway__ click on __Install Now__ to install the plugin
-*	A popup window will ask you to confirm your wish to install the Plugin.
-*	After installation, activate the plugin.
-* 	Open the settings page for Easy Digital Downloads  and click the "Payment Gateways" tab.
-* 	Click on the __Unifiedpurse__ subtab from the available Checkout Options
-*	Configure your __Unifiedpurse Payment Gateway__ settings. See below for details.
-
-= Manual Installation =
 1. 	Download the plugin zip file
 2. 	Login to your WordPress Admin. Click on "Plugins > Add New" from the left hand menu.
 3.  Click on the "Upload" option, then click "Choose File" to select the zip file from your computer. Once selected, press "OK" and press the "Install Now" button.
@@ -65,7 +52,7 @@ If you have suggestions or a new feature request, feel free to get in touch with
 
 
 
-= Configure the plugin =
+## Configure the plugin ##
 To configure the plugin, go to __Downloads > Settings__ from the left hand menu, then click on the __Payment Gateways__ tab. You will see __Unifiedpurse__ as a subtab. Click on it to configure the payment gateway.
 
 
@@ -75,23 +62,9 @@ To configure the plugin, go to __Downloads > Settings__ from the left hand menu
 
 
 
-== Frequently Asked Questions ==
+## Frequently Asked Questions ##
 
-= What Do I Need To Use The Plugin =
+### What Do I Need To Use The Plugin ###
 
 1.	You need to have Easy Digital Downloads plugin installed and activated on your WordPress site.
 2.	You need to open a Unifiedpurse account on [Unifiedpurse](https://unifiedpurse.com)
-
-
-
-== Changelog ==
-
-= 1.0.0, March 13, 2019 =
-*   First release
-
-
-== Screenshots ==
-
-1. Unifiedpurse Easy Digital Downloads payment gateway settings Page
-
-2. Unifiedpurse Easy Digital Downloads payment popup on the checkout page

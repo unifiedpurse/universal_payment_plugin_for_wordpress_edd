@@ -1,7 +1,7 @@
 === Unifiedpurse Easy Digital Downloads Payment Gateway ===
-Contributors: tubiz
+Contributors: tormuto
 Donate link: https://unifiedpurse.com/sci?receiver=unifiedpurse&currency=USD&amount=2&memo=freewill+donation
-Tags: paystack, edd, payment gateway, tubiz plugins, verve, ghana, nigeria, mastercard, visa,
+Tags: paystack, edd, payment gateway, tormuto plugins, verve, ghana, nigeria, mastercard, visa,
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 5.0
