@@ -4,8 +4,8 @@
     Plugin URL:        https://unifiedpurse.com
     Description:       Universal payment gateway for Easy Digital Downloads
     Version:           1.0.0
-    Author:            Ibukun Oladipo
-    Author URI:        https://tormuto.com
+    Author:            Unifiedpurse
+    Author URI:        http://unifiedpurse.com/
     License:           GPL-2.0+
     License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
 */
@@ -39,7 +39,11 @@ add_filter( 'edd_settings_sections_gateways', 'tbz_edd_unifiedpurse_settings_sec
 
 
 function tbz_edd_unifiedpurse_settings( $settings ) {
-
+	
+	$widget_url= trim( edd_get_option( 'edd_unifiedpurse_widget_url' ) );
+	$action_btn="";
+	if(!empty($widget_url))$action_btn='<div style="text-align:center;"> <a href="'.$widget_url.'" target="_blank" class="button button-info">View UnifiedPurse Transactions</a></div>';
+		
     $unifiedpurse_settings = array(
         array(
             'id' => 'edd_unifiedpurse_settings',
@@ -58,23 +62,13 @@ function tbz_edd_unifiedpurse_settings( $settings ) {
             'id'   => 'edd_unifiedpurse_widget_url',
             'name' => 'Transaction Widget URL',
             'desc' => 
-				'<p>Transaction widget allows you to easily access and manage records on your transaction history. (this is optional)
-				Generate one at <a href="https://unifiedpurse.com/accept_payments#transaction_widget">https://unifiedpurse.com/accept_payments#transaction_widget</a></p>',
-            'type' => 'url',
+				'<p>Transaction widget allows you to easily access and manage records on your transaction history. (this is optional)<br/>
+				Generate one at <a href="https://unifiedpurse.com/accept_payments#transaction_widget">https://unifiedpurse.com/accept_payments#transaction_widget</a> '.$action_btn.'</p>',
+            'type' => 'text',
             'size' => 'regular'
         ),
     );
 	
-	
-	$widget_url= trim( edd_get_option( 'edd_unifiedpurse_widget_url' ) );
-	if(!empty($widget_url)){
-		$unifiedpurse_settings[]=array(
-            'id'    => 'edd_unifiedpurse_widget_iframe',
-            'type'  => 'descriptive_text',
-            'name'  => 'Transaction Widget Iframe',
-            'desc'  =>'<iframe src="'.$widget_url.'" style="width:100%;height:560px;border:1px solid #bbb;" ></iframe>'
-        );
-	}
 
     if ( version_compare( EDD_VERSION, 2.5, '>=' ) ) {
         $unifiedpurse_settings = array( 'unifiedpurse-settings' => $unifiedpurse_settings );
